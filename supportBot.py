@@ -37,9 +37,7 @@ async def 답변(inter : Interaction , id , message):
     await member.send(embed = Embed(title = f"{member.name}님, 개발자에게서 답변이 왔어요." , description=f"
 ```\n{message}\n```
 " , color = random_color() ))
-    await inter.response.send_message(f"답변 완료.\n
-```\n{message}\n```
-")
+    await inter.response.send_message(f"답변 완료.\n```\n{message}\n```")
 
 @client.event
 async def on_message(message):
