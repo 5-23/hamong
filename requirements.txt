@@ -1,0 +1,12 @@
+asyncio
+datetime
+youtube-dl
+nextcord
+datetime
+beautifulsoup4
+requests
+ffmpeg-python
+PingPongTool
+humanfriendly
+PyNaCl
+nextcord[voice]
