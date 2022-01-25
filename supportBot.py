@@ -34,7 +34,7 @@ async def send(message = None , embed = None):
 @client.slash_command(description="개발자만 사용가능")
 async def 답변(inter : Interaction , id , message):
     member = utils.get(client.get_all_members(),id = int(str(id).replace(" ","")))
-    await member.send(embed = Embed(title = f"**{member.name}**님, 관리진에게서 답변이 도착하였습니다." , description=f"```\n{message}\n```", color = random_color() ))
+    await member.send(embed = Embed(title = f"**{member.name}**님, 관리진에게서 답변이 도착하였습니다." , description=f"```\n{message}\n```", color = random_color() , timestamp=inter.message.created_at ))
     await inter.response.send_message(f"답변 완료.\n```\n{message}\n```")
 
 @client.event
