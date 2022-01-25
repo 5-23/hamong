@@ -10,6 +10,7 @@ from nextcord.ext.commands.core import check
 from nextcord.shard import EventType
 from nextcord.utils import get
 from random import *
+import datetime
 from datetime import *
 from nextcord import channel    
 from time import *
