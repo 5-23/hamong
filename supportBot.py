@@ -40,7 +40,7 @@ async def 답변(inter : Interaction , id , message):
 @client.event
 async def on_message(message):
     try:
-        if str(message.channel.type) == "private":,timestamp=message.created_at
+        if str(message.channel.type) == "private":
             if message.author.bot == False:
                 embed = Embed(title = f"문의를 하실 건가요?",description = f"```\n내용: {message.content}```\n",timestamp=message.created_at , color = random_color())
                 try: 
